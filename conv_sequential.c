@@ -19,12 +19,12 @@ void sequential_convolution(int *A, int *FF, int *R, int NA, int NF) {
 
 int main() {
     int NA, NF;
+    scanf("%d %d", &NA, &NF);
     int *A = malloc(sizeof(int) * NA);
     int *F = malloc(sizeof(int) * NF);
     int *FF = malloc(sizeof(int) * NF);
     int *R = malloc(sizeof(int) * (NA - NF + 1));
 
-    scanf("%d %d", &NA, &NF);
     for (int i = 0; i < NA; i++)
     {
         scanf("%d", &A[i]);
