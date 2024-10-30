@@ -45,9 +45,9 @@ int main() {
 
     printf("Convolution result:\n");
     for (int i = 0; i < NA - NF +1; i++) {
-        printf("%d ", R[i]);
+        printf("%d\n", R[i]);
     }
-    printf("\n");
+    // printf("\n");
 
     free(F);
     free(A);
